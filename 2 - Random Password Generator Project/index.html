@@ -4,16 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/png/favicon.png"
+      type="image/x-icon"
+    />
     <title>Random Password Generator</title>
   </head>
   <body>
+    <div class="night">
+      <div class="shooting_stars"></div>
+      <div class="shooting_stars"></div>
+      <div class="shooting_stars"></div>
+      <div class="shooting_stars"></div>
+      <div class="shooting_stars"></div>
+      <div class="shooting_stars"></div>
+      <div class="shooting_stars"></div>
+      <div class="shooting_stars"></div>
+      <div class="shooting_stars"></div>
+    </div>
     <section class="container">
       <h1>Generate a<br /><span>Random Password</span></h1>
-      <div class="display">
+      <div class="display popout">
         <input type="text" placeholder="Password" id="password" />
-        <i class="fa-solid fa-copy"></i>
+        <span>
+            <i 
+          onclick="copyToClipboard()"
+          id="iconCopy"
+          class="fa-solid fa-copy"
+        ></i>
+        </span>
       </div>
+      <button class="popout" onclick="renderPassword()">
+        <i class="fa-light fa-bolt"></i>
+        <span class="move">G</span>
+        <span class="move">e</span>
+        <span class="move">n</span>
+        <span class="move">e</span>
+        <span class="move">r</span>
+        <span class="move">a</span>
+        <span class="move">t</span>
+        <span class="move">e</span>
+        <span class="move"> </span>
+        <span class="move">P</span>
+        <span class="move">a</span>
+        <span class="move">s</span>
+        <span class="move">s</span>
+        <span class="move">w</span>
+        <span class="move">o</span>
+        <span class="move">r</span>
+        <span class="move">d</span>
+      </button>
     </section>
-    <script src="./randomPassword.js"></script>
+    <script
+      class="fa-solid fa-bolt-lightning"
+      src="./randomPassword.js"
+    ></script>
   </body>
 </html>
