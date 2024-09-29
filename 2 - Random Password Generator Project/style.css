@@ -1,0 +1,61 @@
+@import url(../Fonts/Font_Awesome/all.min.css);
+@font-face {
+  font-family: "Font Awesome";
+  src: url("../Fonts/webfonts/fa-solid-900.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Fredoka_Light";
+  src: url("../Fonts/Fredoka/Fredoka-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Fredoka_Medium";
+  src: url("../Fonts/Fredoka/Fredoka-Medium.woff2") format("woff2");
+}
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: #002339;
+  color: #fff;
+}
+.container {
+  margin: 12%;
+  width: 90%;
+  max-width: 700px;
+}
+.container h1 {
+  font-family: "Fredoka_Medium";
+  letter-spacing: 2px;
+  font-size: 42px;
+}
+.container span {
+  color: #019f55;
+  border-bottom: 4px solid #019f55;
+  padding-bottom: 8px;
+  border-radius: 8px;
+}
+.display {
+  width: 100%;
+  margin-top: 52px;
+  margin-bottom: 32px;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 22px;
+  border-radius: 8px;
+}
+.display i {
+  width: 32px;
+  cursor: pointer;
+}
+.display input {
+  border: none;
+  outline: none;
+  font-size: 24px;
+}
