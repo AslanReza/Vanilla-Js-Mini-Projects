@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Exo";
+  src: url(../Fonts/Exo_2/Exo2-Regular.woff2) format("woff2");
+}
+body {
+  background-color: #6cf11a;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+button {
+  font-family: "Exo";
+  font-size: 22px;
+  padding: 22px 48px;
+  background-color: transparent;
+  color: #fff;
+  letter-spacing: 1.6px;
+  border: none;
+  /* border-radius: 0px 24px 0px 24px; */
+  cursor: pointer;
+  outline: none;
+}
