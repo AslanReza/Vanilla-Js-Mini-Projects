@@ -36,28 +36,34 @@ body {
   text-align: center;
   font-size: 98px;
 }
-.wrapper_container p {
+p {
   color: #fff;
   margin: 32px 0px;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   letter-spacing: 1px;
   line-height: 28px;
   font-family: "Sulphur_Regular" !important;
   word-wrap: break-word;
 }
+
 .wrapper_container button {
   display: block;
   background-color: #ffa31a;
   border: none;
   outline: none;
   padding: 18px;
-  font-size: 20px;
+  font-size: 24px;
   color: #181818;
   padding: 12px 24px;
   margin: 0 auto;
   border-radius: 6px;
   cursor: pointer;
   font-family: "Sulphur_Regular" !important;
-  font-weight: bolder;
+  font-weight: bolder;transition: all ease 0.2s;
+}
+.wrapper_container button:hover {
+  color: #ffa31a;
+  background-color: #1e1e1e00;
+  box-shadow: 0px 0px 12px #ffa31a, inset 0px 0px 6px #ff7700;
 }
