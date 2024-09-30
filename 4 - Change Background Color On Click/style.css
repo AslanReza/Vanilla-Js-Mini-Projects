@@ -17,13 +17,12 @@ body {
 }
 button {
   font-family: "Exo";
-  font-size: 22px;
-  padding: 22px 48px;
+  font-size: 26px;
+  padding: 4px 12px;
   background-color: transparent;
   color: #fff;
   letter-spacing: 1.6px;
   border: none;
-  /* border-radius: 0px 24px 0px 24px; */
   cursor: pointer;
   outline: none;
 }
