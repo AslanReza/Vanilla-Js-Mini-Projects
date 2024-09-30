@@ -5,6 +5,59 @@
   margin: 0px;
   box-sizing: border-box;
 }
-body{
-    background-color: #ffa31a;
+@font-face {
+  font-family: "Sulphur_Light";
+  src: url(../Fonts/Sulphur_Point/SulphurPoint-Light.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Sulphur_Regular";
+  src: url(../Fonts/Sulphur_Point/SulphurPoint-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Sulphur_Bold";
+  src: url(../Fonts/Sulphur_Point/SulphurPoint-Bold.woff2) format("woff2");
+}
+body {
+  background-color: #ffa31a;
+}
+.wrapper_container {
+  width: 80vmin;
+  padding: 54px 42px;
+  background-color: #1e1e1e;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 12px;
+  box-shadow: 18px 18px 42px rgba(63, 42, 0, 0.4);
+}
+.wrapper_container span {
+  display: block;
+  text-align: center;
+  font-size: 98px;
+}
+.wrapper_container p {
+  color: #fff;
+  margin: 32px 0px;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-family: "Sulphur_Regular" !important;
+  word-wrap: break-word;
+}
+.wrapper_container button {
+  display: block;
+  background-color: #ffa31a;
+  border: none;
+  outline: none;
+  padding: 18px;
+  font-size: 20px;
+  color: #181818;
+  padding: 12px 24px;
+  margin: 0 auto;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: "Sulphur_Regular" !important;
+  font-weight: bolder;
 }
