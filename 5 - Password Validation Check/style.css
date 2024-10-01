@@ -24,13 +24,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #c1c1c1;
+  background-color: #e3e3e3;
 }
 .main_wrapper {
   background-color: #f2f2f2;
   width: 450px;
   font-family: "Poppins_Regular";
   padding: 32px;
+  box-shadow: 0px 0px 8px #636363;
   border-radius: 8px;
 }
 .main_wrapper .password_section {
@@ -77,15 +78,34 @@ body {
   color: #979797;
   width: 16px;
 }
-.password_requirement li.valid i{
-    font-size: 16px;
-    color:#22B532 ;
+.password_requirement li.valid i {
+  font-size: 16px;
+  color: #22b532;
 }
 .password_requirement li span {
   margin-left: 16px;
 }
-.password_requirement li.valid span{
-    font-size: 14px;
-    color:#808080 ;
+.password_requirement li.valid span {
+  font-size: 14px;
+  color: #808080;
 }
-
+@media screen and (max-width: 524px) {
+  body,
+  .main_wrapper {
+    padding: 14px;
+  }
+  .main_wrapper .password_section {
+    height: 56px;
+  }
+  .password_section input,
+  .content_section p {
+    font-size: 14px;
+  }
+  .password_section i,
+  .password_requirement li {
+    font-size: 12px;
+  }
+  .password_requirement li span {
+    margin-left: 6px;
+  }
+}
