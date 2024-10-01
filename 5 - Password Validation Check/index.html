@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Validation Check</title>
+  </head>
+  <body>
+    <div class="main_wrapper">
+      <div class="password_section">
+        <input type="password" id="password" placeholder="Type Your Password" />
+        <i class="fa-solid fa-eye"></i>
+      </div>
+      <div class="content_section">
+        <p>Password Must Contains</p>
+        <ul class="password_requirement">
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At Least 8 Characters Length</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At Least 1 Uppercase Letter (A...Z)</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At Least 1 Lowercase Letter (a...z)</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At Least 1 Number (0...9)</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle"></i>
+            <span>At Least 1 Special Symbol ($...!)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
