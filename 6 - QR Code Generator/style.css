@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "InstrumentSans_Condensed-Regular";
+
+  src: url(../Fonts/Instrument_Sans/InstrumentSans_Condensed-Regular.woff2)
+    format("woff2");
+}
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "InstrumentSans_Condensed-Regular";
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #333333;
+  background: -webkit-linear-gradient(to right, #dd1818, #333333);
+  background: linear-gradient(to right, #dd1818, #333333);
+}
+.main-wrapper {
+  background-color: #eeeeeec0;
+  max-width: 410px;
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+header h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+header p {
+  margin-top: 4px;
+  color: #515151;
+  font-size: 16px;
+}
+.main-wrapper .qr-form {
+  margin: 22px 0px 32px;
+}
+.qr-form :where(input, button) {
+  width: 100%;
+  height: 56px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+.qr-form input {
+  font-size: 18px;
+  padding: 0px 16px;
+  border: 1px solid darkgray;
+}
+.qr-form button {
+  color: #fff;
+  cursor: pointer;
+  margin-top: 18px;
+  font-size: 16px;
+  background: #333333;
+  background: -webkit-linear-gradient(to right, #dd1818, #333333);
+  background: linear-gradient(to right, #dd1818, #333333);
+}
+.main-wrapper .qr-code {
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  padding: 32px 0px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
