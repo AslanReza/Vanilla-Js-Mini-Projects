@@ -22,22 +22,27 @@ body {
   background: linear-gradient(to right, #dd1818, #333333);
 }
 .main-wrapper {
-  background-color: #eeeeeec0;
+  background-color: #9f9f9f16;
   max-width: 410px;
   border-radius: 8px;
-  padding: 16px 24px;
+  padding: 16px 24px 0px;
+  height: 260px;
+  transition: height 0.2s ease;
+}
+.main-wrapper.active {
+  height: 532px;
 }
 header h1 {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
 }
 header p {
   margin-top: 4px;
-  color: #515151;
+  color: #ffffff;
   font-size: 16px;
 }
 .main-wrapper .qr-form {
-  margin: 22px 0px 32px;
+  margin: 22px 0px 24px;
 }
 .qr-form :where(input, button) {
   width: 100%;
@@ -68,4 +73,13 @@ header p {
   align-items: center;
   justify-content: center;
   border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.main-wrapper.active .qr-code {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+.qr-code img {
+  border-radius: 6px;
 }
