@@ -29,6 +29,7 @@ body {
 .main_wrapper {
   background-color: #f2f2f2;
   width: 450px;
+  font-family: "Poppins_Regular";
   padding: 32px;
   border-radius: 8px;
 }
@@ -58,14 +59,15 @@ body {
   margin: 18px 0px 12px;
 }
 .content_section p {
-  font-size: 18px;
+  font-family: "Poppins_Bold";
+  font-size: 16px;
 }
 .content_section .password_requirement {
   margin-top: 18px;
 }
 .password_requirement li {
   list-style: none;
-  font-size: 16px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
@@ -75,6 +77,15 @@ body {
   color: #979797;
   width: 16px;
 }
+.password_requirement li.valid i{
+    font-size: 16px;
+    color:#22B532 ;
+}
 .password_requirement li span {
   margin-left: 16px;
 }
+.password_requirement li.valid span{
+    font-size: 14px;
+    color:#808080 ;
+}
+
