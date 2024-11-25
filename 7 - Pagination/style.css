@@ -5,8 +5,8 @@
     url("../Fonts/webfonts/fa-light-300.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Poppins_Regular";
-  src: url(../Fonts/Poppins/Poppins-Regular.woff2) format("woff2");
+  font-family: "Comic";
+  src: url(../Fonts/Comicrunes/ComicRunes.woff2) format("woff2");
 }
 *,
 *::after,
@@ -14,4 +14,95 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+.comic-font {
+  font-family: "Comic";
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background: #ffafbd;
+  background: -webkit-linear-gradient(to top right, #ffc3a0, #ff506d);
+  background: linear-gradient(to top right, #ffc3a0, #ff506d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  background: #ffffffc5;
+  color: #383838;
+  padding: 10px 40px;
+  border-radius: 0px;
+}
+ul {
+  margin: 20px 30px;
+}
+ul li {
+  display: inline-block;
+  margin: 0px 4px;
+  background-position: 0 -45px;
+  transition: background-position 0.5s;
+  width: 32px;
+  height: 32px;
+  /* border-radius: 50%; */
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.button-1,
+.button-2 {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 500;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.button-1 i,
+.button-2 i {
+  font-size: 18px;
+}
+ul li.active {
+  color: black;
+  background-position: 0 0;
+  background-image: linear-gradient(#ff4568, #ff4568);
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 576px) {
+  .pagination {
+    display: flex;
+    flex-direction: column;
+  }
+  ul li {
+    display: flex;
+    margin: 4px 0px;
+    justify-content: center;
+  }
+  .button-1,
+  .button-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+    font-weight: 500;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .button-1 i,
+  .button-2 i {
+    font-size: 18px;
+    transform: rotateZ(90deg);
+  }
 }
