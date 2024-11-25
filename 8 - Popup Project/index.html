@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script></script>
+    <div class="container">
+      <button class="button" type="submit" onclick="showPopup()">
+        Show Popup!
+      </button>
+      <div class="popup" id="popup">
+        <i class="fa-solid fa-circle-check"></i>
+        <h2 class="font-style">Thank You!</h2>
+        <p class="font-style">
+          Your Details has Been Successfully submitted. Thanks!
+        </p>
+        <button type="button" class="font-style" onclick="hidePopup()">
+          OK
+        </button>
+      </div>
+    </div>
+    <script>
+      let popup = document.getElementById("popup");
+      function showPopup() {
+        popup.classList.add("open-popup");
+      }
+      function hidePopup() {
+        popup.classList.remove("open-popup");
+      }
+    </script>
   </body>
 </html>
