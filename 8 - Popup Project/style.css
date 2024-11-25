@@ -102,6 +102,10 @@ i {
 }
 @media only screen and (max-width: 576px) {
   .popup {
-    width: 320px;
+    width: 260px;
+  }
+  i {
+    font-size: 100px;
+    margin-top: -50px;
   }
 }
