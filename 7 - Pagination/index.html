@@ -4,27 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/Favicon.ico" type="image/x-icon" />
     <title>Pagination</title>
   </head>
   <body>
     <div class="container">
       <div class="pagination">
-        <button class="button-1">
-          <i class="fa-solid fa-arrow-left"></i> Prev
+        <button class="button-1" onclick="backButton()">
+          <i class="fa-solid fa-arrow-left"></i
+          ><span class="comic-font"> Prev</span>
         </button>
         <ul>
-          <li class="link active" value="1">1</li>
-          <li class="link" value="2">2</li>
-          <li class="link" value="3">3</li>
-          <li class="link" value="4">4</li>
-          <li class="link" value="5">5</li>
-          <li class="link" value="6">6</li>
-          <li class="link" value="7">7</li>
+          <li class="link comic-font active" value="1">1</li>
+          <li class="link comic-font" value="2" onclick="activeLink()">2</li>
+          <li class="link comic-font" value="3" onclick="activeLink()">3</li>
+          <li class="link comic-font" value="4" onclick="activeLink()">4</li>
+          <li class="link comic-font" value="5" onclick="activeLink()">5</li>
+          <li class="link comic-font" value="6" onclick="activeLink()">6</li>
+          <li class="link comic-font" value="7" onclick="activeLink()">7</li>
         </ul>
-        <button class="button-2">
-          Next <i class="fa-solid fa-arrow-right"></i>
+        <button class="button-2" onclick="nextButton()">
+          <span class="comic-font"> Next</span>
+          <i class="fa-solid fa-arrow-right"></i>
         </button>
       </div>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
