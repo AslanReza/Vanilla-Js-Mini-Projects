@@ -1,0 +1,17 @@
+@import url(../Fonts/Font_Awesome/all.min.css);
+@font-face {
+  font-family: "Font Awesome";
+  src: url("../Fonts/webfonts/fa-solid-900.woff2") format("woff2"),
+    url("../Fonts/webfonts/fa-light-300.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins_Regular";
+  src: url(../Fonts/Poppins/Poppins-Regular.woff2) format("woff2");
+}
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
