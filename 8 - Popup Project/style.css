@@ -15,3 +15,93 @@
   padding: 0px;
   box-sizing: border-box;
 }
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #efefbb;
+  background: -webkit-linear-gradient(to right, #d4d3dd, #efefbb);
+  background: linear-gradient(to right, #d4d3dd, #efefbb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  font-family: "Childhood-Bold";
+  padding: 8px 42px;
+  background: rgba(0, 0, 0, 0.913);
+  border: 0;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 12px;
+  box-shadow: 0 0 20px 0px darkgray;
+  transition: all 0.2s ease;
+}
+.button:hover {
+  transform: scale(1.2);
+}
+.button:active {
+  transform: scale(0.8);
+}
+.font-style {
+  font-family: "Childhood-Bold";
+}
+i {
+  font-size: 140px;
+  color: green;
+  background-color: #ffffff;
+  margin-top: -70px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+}
+.popup {
+  width: 426px;
+  background: #171717;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0px 32px 32px;
+  color: #fff;
+  transition: all 0.4s;
+  visibility: hidden;
+}
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 32px 0px 10px;
+}
+.popup button {
+  width: 75%;
+  margin-top: 50px;
+  padding: 12px 0px;
+  background: green;
+  color: white;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.popup button:hover {
+  transform: scale(1.2);
+}
+.popup button:active {
+  transform: scale(0.8);
+}
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+@media only screen and (max-width: 576px) {
+  .popup {
+    width: 320px;
+  }
+}
